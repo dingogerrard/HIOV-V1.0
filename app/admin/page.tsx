@@ -10,13 +10,11 @@ export default function AdminPage() {
   const [submissions, setSubmissions] = useState<any>({ success: false, data: [], message: "" })
 
   useEffect(() => {
-    // Check authentication
     const checkAuth = async () => {
       try {
         const response = await fetch("/api/admin/check-auth")
         if (response.ok) {
           setIsAuthenticated(true)
-          // Load submissions
           const submissionsData = await getContactSubmissions()
           setSubmissions(submissionsData)
         } else {
@@ -41,7 +39,7 @@ export default function AdminPage() {
   }
 
   if (!isAuthenticated) {
-    return null // Will redirect to login
+    return null
   }
 
   return <AdminClient success={submissions.success} data={submissions.data} message={submissions.message} />
