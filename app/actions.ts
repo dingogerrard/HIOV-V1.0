@@ -52,7 +52,7 @@ export async function submitContactForm(formData: FormData) {
     try {
       await resend.emails.send({
         from: "Hole In One Ventures <noreply@holeinoneventures.com>",
-        to: ["hello@holeinoneventures.com"], // Replace with your actual email
+        to: ["adam.lee.us@gmail.com"], // Replace with your actual email
         subject: `New Contact Form Submission from ${firstName} ${lastName}`,
         html: `
       <h2>New Contact Form Submission</h2>
