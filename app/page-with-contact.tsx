@@ -1,8 +1,7 @@
 "use client"
 
-import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { ArrowRight, Target, Users, Handshake, TrendingUp, Mail, MapPin } from 'lucide-react'
+import { Target, Users, Handshake, TrendingUp, Mail, MapPin } from 'lucide-react'
 import Link from "next/link"
 import { GolfAnimation } from "@/components/golf-animation"
 import { MobileNav } from "@/components/mobile-nav"
@@ -38,12 +37,6 @@ export function PageWithContact() {
             <Link href="/portfolio" className="text-gray-600 hover:text-emerald-600 transition-colors">
               Portfolio
             </Link>
-            <a 
-              href="mailto:hello@holeinoneventures.com" 
-              className="bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded-md transition-colors"
-            >
-              Get In Touch
-            </a>
           </nav>
           <MobileNav />
         </div>
@@ -64,16 +57,9 @@ export function PageWithContact() {
                 clarity, courage, and calculated risk.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a
-                  href="mailto:hello@holeinoneventures.com"
-                  className="inline-flex items-center justify-center bg-emerald-600 hover:bg-emerald-700 text-white text-lg px-8 py-3 rounded-md transition-colors"
-                >
-                  Partner With Us
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </a>
                 <Link
                   href="/portfolio"
-                  className="inline-flex items-center justify-center border border-emerald-600 text-emerald-600 hover:bg-emerald-50 text-lg px-8 py-3 rounded-md transition-colors"
+                  className="inline-flex items-center justify-center bg-emerald-600 hover:bg-emerald-700 text-white text-lg px-8 py-3 rounded-md transition-colors"
                 >
                   View Portfolio
                 </Link>
@@ -198,17 +184,6 @@ export function PageWithContact() {
                 <p>Because you're not swinging for average.</p>
                 <p>Because you want partners who play with purpose.</p>
                 <p>Because you believe that doing something rare is worth everything.</p>
-              </div>
-              <div className="bg-emerald-600 text-white rounded-2xl p-8 md:p-12">
-                <h3 className="text-2xl md:text-3xl font-bold mb-4">{"Let's build the future."}</h3>
-                <p className="text-xl mb-8 text-emerald-100">One swing at a time.</p>
-                <a
-                  href="mailto:hello@holeinoneventures.com"
-                  className="inline-flex items-center bg-white text-emerald-600 hover:bg-gray-100 px-8 py-3 rounded-md text-lg font-medium transition-colors"
-                >
-                  Start the Conversation
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </a>
               </div>
             </div>
           </div>

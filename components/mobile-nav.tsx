@@ -45,13 +45,6 @@ export function MobileNav() {
           >
             Portfolio
           </Link>
-          <a
-            href="mailto:hello@holeinoneventures.com"
-            className="bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2 px-4 rounded text-center"
-            onClick={() => setOpen(false)}
-          >
-            Get In Touch
-          </a>
         </div>
       </SheetContent>
     </Sheet>
