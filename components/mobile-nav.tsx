@@ -3,15 +3,11 @@
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import { Menu } from "lucide-react"
+import { Menu } from 'lucide-react'
 import Link from "next/link"
 import { useSmoothScroll } from "@/hooks/use-smooth-scroll"
 
-interface MobileNavProps {
-  onContactClick: () => void
-}
-
-export function MobileNav({ onContactClick }: MobileNavProps) {
+export function MobileNav() {
   const [open, setOpen] = useState(false)
   const { scrollToSection } = useSmoothScroll()
 
@@ -49,15 +45,13 @@ export function MobileNav({ onContactClick }: MobileNavProps) {
           >
             Portfolio
           </Link>
-          <Button
-            className="bg-emerald-600 hover:bg-emerald-700 w-full"
-            onClick={() => {
-              onContactClick()
-              setOpen(false)
-            }}
+          <a
+            href="mailto:hello@holeinoneventures.com"
+            className="bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2 px-4 rounded text-center"
+            onClick={() => setOpen(false)}
           >
             Get In Touch
-          </Button>
+          </a>
         </div>
       </SheetContent>
     </Sheet>
